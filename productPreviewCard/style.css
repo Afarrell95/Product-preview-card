@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(30deg, 38%, 92%);
+  }
+
+.main-container {
+    display: flex;
+    background: white;
+    height: 60vh;
+    width: 40vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.product-image {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 20px;
+}
+
+h1, p, .addCart {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+}
+
+h1 {
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+    letter-spacing: 0.5rem;
+}
+
+h3 {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: bold;
+}
+
+del {
+    color: hsl(228, 12%, 48%);
+}
+
+.addCart {
+    background: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cart-img {
+    padding-right: 10px;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.attribution {
+    bottom: 0px;
+    position: absolute;
+}
+
+.mobile-img {
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+}
+@media all and (max-width:1020px) {
+    
+    .main-container { 
+       display: flex;
+       flex-direction: column;
+       overflow: hidden;
+       position: absolute;
+    }
+
+    .text {
+        padding:15px;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .price {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .product-image {
+        opacity: 0;
+        height: 0%;
+        width: 0%;
+    }
+
+    .mobile-img {
+        opacity: 1;
+        height: 33%;
+        width: 100%;
+        position: relative;
+        top:0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    
+    }
+}
